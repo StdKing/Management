@@ -382,7 +382,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                         ),
                         InlineKeyboardButton(
                             text="sᴏᴜʀᴄᴇ",
-                            callback_data="source_",
+                            callback_data="music_",
                         ),
                     ],
                     [
@@ -1105,8 +1105,8 @@ def main():
     about_callback_handler = CallbackQueryHandler(
         Fallen_about_callback, pattern=r"fallen_"
     )
-    source_callback_handler = CallbackQueryHandler(
-        Source_about_callback, pattern=r"source_"
+    music_callback_handler = CallbackQueryHandler(
+        Music_about_callback, pattern=r"music_"
     )
 
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
