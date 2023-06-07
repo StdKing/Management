@@ -433,9 +433,9 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
 
 
 @run_async
-def Source_about_callback(update: Update, context: CallbackContext):
+def Music_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
-    if query.data == "source_":
+    if query.data == "music_":
         query.message.edit_text(
             text=f"""
 *ʜᴇʏ,
